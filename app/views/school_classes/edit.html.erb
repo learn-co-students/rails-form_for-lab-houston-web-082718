@@ -1,0 +1,15 @@
+<h1>Students#edit</h1>
+<p>Find me in app/views/students/edit.html.erb</p>
+
+
+<h3>School Class Update Form</h3>
+
+<%= form_for(@class) do |c| %>
+  <label>Class Name:</label><br>
+  <%= c.text_field :title %><br>
+
+  <label>Room Number:</label><br>
+  <%= c.number_field :room_number %><br>
+
+  <%= c.submit %>
+<% end %>
