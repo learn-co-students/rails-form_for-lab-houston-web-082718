@@ -1,0 +1,5 @@
+<h2><%= @student.first_name %> <%= @student.last_name %></h2>
+<%= form_tag edit_student_path, method: :get do %>
+    <%= button_tag 'Update' %>
+<% end %>
+
